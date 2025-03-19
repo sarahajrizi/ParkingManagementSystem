@@ -1,0 +1,60 @@
+*{
+    font-family: 'Poppins';
+}
+body{
+    background-color: #191a1f;
+    padding: 50px 0;
+
+}
+.signup-section{
+    width: 400px;
+    height: 100px;
+    margin: 95px auto;
+
+}
+.signup-section h2{
+    color:#FDA100 ;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Poppins';
+    padding-right: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 20px;
+
+}
+input{
+    height: 30px;
+    border-radius: 9px;
+    background-color: #E5E5E5;
+    color:#717171
+
+}
+.signup-logo{
+text-align: center;
+padding-right: 40px;
+}
+button{
+    height: 30px;
+    background-color: #FDA100;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+input::placeholder{
+    padding-left: 15px;
+}
+.signup-section a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-right: 40px;
+justify-content: center;}
+.signup-section span{
+    color: #FDA100;
+}
