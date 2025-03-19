@@ -57,4 +57,58 @@ input::placeholder{
 justify-content: center;}
 .signup-section span{
     color: #FDA100;
+    background-color: #191A1F;
+    color: white;
+    font-family: 'Poppins';
+}
+.signin{
+    margin: 150px auto;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+h3{
+    text-align: center;
+    color: #FDA100;
+    font-size: 28px;
+}
+.form{
+    width: 300px;
+    margin: 15px auto;
+    display: block;
+    align-items: center;
+}
+.btn-signin{
+    background-color: #FDA100;
+    color: white;
+    width: 288px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 9px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+a span{
+    color: #FDA100;
+}
+.form input{
+    background-color: #E5E5E5;
+    width: 276px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    padding-left: 10px;
+}
+.form input::placeholder{
+    color: #717171;
+    font-family: 'Poppins';
 }
