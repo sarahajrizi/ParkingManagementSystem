@@ -55,10 +55,10 @@ input::placeholder{
     text-align: center;
     padding-right: 40px;
 justify-content: center;}
-.signup-section span{
+
+.signup-form  a span{
     color: #FDA100;
     background-color: #191A1F;
-    color: white;
     font-family: 'Poppins';
 }
 .signin{
