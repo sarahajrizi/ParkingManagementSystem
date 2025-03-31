@@ -73,6 +73,39 @@ a {
     color: white;
     display: block;
     text-align: center;
+    padding-right: 40px;
+justify-content: center;}
+
+.signup-form  a span{
+    color: #FDA100;
+    background-color: #191A1F;
+    font-family: 'Poppins';
+}
+.signin{
+    margin: 150px auto;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+h3{
+    text-align: center;
+    color: #FDA100;
+    font-size: 28px;
+}
+.form{
+    width: 300px;
+    margin: 15px auto;
+    display: block;
+    align-items: center;
+}
+.btn-signin{
+    background-color: #FDA100;
+    color: white;
+    width: 288px;
+    height: 35px;
     margin-top: 15px;
 }
 
