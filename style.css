@@ -1,114 +1,258 @@
-*{
-    font-family: 'Poppins';
-}
-body{
+/* Përdor Flexbox për të qëndruar në qendër */
+body {
     background-color: #191a1f;
-    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-}
-.signup-section{
-    width: 400px;
-    height: 100px;
-    margin: 95px auto;
-
-}
-.signup-section h2{
-    color:#FDA100 ;
-    font-size: 28px;
-    text-align: center;
-    font-family: 'Poppins';
-    padding-right: 40px;
-}
-form{
+/* Krijon një kuti që mban formën në mes të ekranit */
+.container {
     display: flex;
     flex-direction: column;
-    width: 350px;
-    gap: 20px;
-
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 40px;
 }
-input{
-    height: 30px;
+
+/* Titulli */
+.container .title {
+    color: #FDA100;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Për formën */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+input {
+    height: 40px;
     border-radius: 9px;
     background-color: #E5E5E5;
-    color:#717171
+    color: #717171;
+    padding-left: 15px;
+    border: none;
+}
 
-}
-.signup-logo{
-text-align: center;
-padding-right: 40px;
-}
-button{
-    height: 30px;
+/* Stilizimi i butonit */
+button, .btn-signin {
+    height: 40px;
     background-color: #FDA100;
     color: white;
     border: none;
     border-radius: 9px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
-input::placeholder{
-    padding-left: 15px;
+
+button:hover, .btn-signin:hover {
+    background-color: #e08e00d0;
+    transition: 1s;
 }
-.signup-section a{
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #717171;
+}
+
+
+/* Lidhjet */
+a {
     text-decoration: none;
     color: white;
     display: block;
     text-align: center;
-    padding-right: 40px;
-justify-content: center;}
-.signup-section span{
-    color: #FDA100;
-    background-color: #191A1F;
-    color: white;
-    font-family: 'Poppins';
-}
-.signin{
-    margin: 150px auto;
-}
-.logo{
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    display: block;
-}
-h3{
-    text-align: center;
-    color: #FDA100;
-    font-size: 28px;
-}
-.form{
-    width: 300px;
-    margin: 15px auto;
-    display: block;
-    align-items: center;
-}
-.btn-signin{
-    background-color: #FDA100;
-    color: white;
-    width: 288px;
-    height: 35px;
     margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 9px;
-    padding-left: 10px;
+}
+
+a span {
+    color: #FDA100;
+}
+
+/* Logo e qendruar */
+.signup-logo, .logo {
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+
+.menu-panel{
+    font-family: 'Poppins';
+    width: 450px;
+    background-color: #1f222b;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0;
+}
+.username{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile{
+    flex-direction: row;
+}
+.profile .name{
+    color: #E5E5E5;
+}
+.name ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.name h5{
+    font-size: 15px;
+    margin-top: -10px;
+}
+.name p{
+    margin-top: -30px;
+}
+.menu{
+    margin-right: 28px;
+}
+.menu ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    
+    
+}
+.menu ul li a{
+    padding-left: 30px;
+padding-bottom: 40px;
+font-size: 15px;
+}
+.menu img{
+    margin-top: 30px;
+}
+.logout a{
+    padding-left: 40px;
+}
+
+
+
+
+
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1E2129;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Profili */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px; /* Hapësira midis fotos dhe tekstit */
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+.profile-text h5 {
+    margin: 15px 0 5px 0;
     font-size: 15px;
 }
-a{
-    text-decoration: none;
-    color: white;
-    justify-content: center;
+
+.profile-text p {
+    font-size: 14px;
+    color: #aaa;
+    margin: 0;
 }
-a span{
+
+/* Menuja */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.menu li:hover {
+    background-color: #2a2e3a;
     color: #FDA100;
 }
-.form input{
-    background-color: #E5E5E5;
-    width: 276px;
-    height: 30px;
-    margin-bottom: 10px;
-    border-radius: 9px;
-    padding-left: 10px;
+
+.menu img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    object-fit: contain;
 }
-.form input::placeholder{
-    color: #717171;
-    font-family: 'Poppins';
+.menu li p{
+    margin-bottom: -10px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Butoni Dil */
+.logout {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.logout:hover {
+    background-color: #2a2e3a;
+    color: #FDA100;
+}
+
+.logout img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    object-fit: contain;
 }
