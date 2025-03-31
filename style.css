@@ -1,4 +1,3 @@
-/* Përdor Flexbox për të qëndruar në qendër */
 body {
     background-color: #191a1f;
     display: flex;
@@ -7,33 +6,30 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-/* Krijon një kuti që mban formën në mes të ekranit */
 .container {
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 400px;
-    padding: 40px;
 }
 
-/* Titulli */
-.container .title {
+h2, h3 {
     color: #FDA100;
     font-size: 28px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Për formën */
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 input {
@@ -43,9 +39,10 @@ input {
     color: #717171;
     padding-left: 15px;
     border: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Stilizimi i butonit */
 button, .btn-signin {
     height: 40px;
     background-color: #FDA100;
@@ -55,74 +52,45 @@ button, .btn-signin {
     font-size: 15px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-top: 10px;
 }
 
 button:hover, .btn-signin:hover {
     background-color: #e08e00d0;
-    transition: 1s;
+    transition: 0.3s;
 }
+
 ::placeholder {
     font-family: 'Poppins', sans-serif;
     color: #717171;
 }
 
-
-/* Lidhjet */
 a {
     text-decoration: none;
     color: white;
-    display: block;
     text-align: center;
-    padding-right: 40px;
-justify-content: center;}
-
-.signup-form  a span{
-    color: #FDA100;
-    background-color: #191A1F;
-    font-family: 'Poppins';
-}
-.signin{
-    margin: 150px auto;
-}
-.logo{
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
     display: block;
-}
-h3{
-    text-align: center;
-    color: #FDA100;
-    font-size: 28px;
-}
-.form{
-    width: 300px;
-    margin: 15px auto;
-    display: block;
-    align-items: center;
-}
-.btn-signin{
-    background-color: #FDA100;
-    color: white;
-    width: 288px;
-    height: 35px;
-    margin-top: 15px;
+    width: 100%;
 }
 
 a span {
     color: #FDA100;
 }
 
-/* Logo e qendruar */
 .signup-logo, .logo {
     text-align: center;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
 }
 
 .logo {
     width: 70px;
     height: 70px;
+
 }
+
+
+
 
 
 .menu-panel{
